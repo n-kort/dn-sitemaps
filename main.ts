@@ -4,7 +4,7 @@ const RM = '<?xml-stylesheet type="text/xsl" href="//dn-api.nsdoku.de/wp-content
 const FROM = '//dn-api.nsdoku.de'
 const TO = '//departure-neuaubing.nsdoku.de'
 
-async function handler(req: Request): Promise<Response> | Response {
+async function handler(req: Request): Promise<Response> {
   const { pathname } = new URL(req.url)
 
   if (!pathname || !pathname.includes('.xml')) {
